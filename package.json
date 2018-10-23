@@ -15,10 +15,10 @@
     "adm-zip": "0.4.7",
     "glob": "~6.0",
     "jasminewd2": "0.0.8",
-    "jasmine": "2.4.1",
+    "jasmine": "2.5.1",
     "optimist": "~0.6.0",
     "q": "1.4.1",
-    "request": "~2.67.0",
+    "request": "~2.81.0",
     "saucelabs": "~1.0.1",
     "selenium-webdriver": "2.52.0",
     "source-map-support": "~0.4.0"
