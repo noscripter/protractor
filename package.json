@@ -21,7 +21,8 @@
     "request": "~2.67.0",
     "saucelabs": "~1.0.1",
     "selenium-webdriver": "2.52.0",
-    "source-map-support": "~0.4.0"
+    "source-map-support": "~0.4.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "body-parser": "1.14.2",
@@ -51,13 +52,15 @@
   },
   "main": "built/protractor.js",
   "scripts": {
-    "prepublish": "gulp prepublish",
+    "prepublish": "npm run snyk-protect; gulp prepublish",
     "pretest": "gulp pretest",
     "start": "node testapp/scripts/web-server.js",
     "test": "node scripts/test.js",
     "tsc": "./node_modules/typescript/bin/tsc",
-    "tsc:w": "./node_modules/typescript/bin/tsc -w"
+    "tsc:w": "./node_modules/typescript/bin/tsc -w",
+    "snyk-protect": "snyk protect"
   },
   "license": "MIT",
-  "version": "3.2.2"
+  "version": "3.2.2",
+  "snyk": true
 }
